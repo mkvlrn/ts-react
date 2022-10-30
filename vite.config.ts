@@ -8,7 +8,7 @@ export default defineConfig({
   plugins: [
     react(),
     VitePWA({
-      includeAssets: ['favicon.ico'],
+      includeAssets: ['*'],
       registerType: 'autoUpdate',
       injectRegister: 'inline',
       workbox: {
