@@ -1,3 +1,3 @@
 export function App() {
-  return <div>app</div>;
+  return <div>progressive web app</div>;
 }

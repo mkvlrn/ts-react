@@ -19,5 +19,6 @@
     "typescript",
     "typescriptreact"
   ],
-  "typescript.preferences.importModuleSpecifier": "non-relative"
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "liveServer.settings.port": 5501
 }

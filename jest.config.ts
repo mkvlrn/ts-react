@@ -8,7 +8,7 @@ const config: Config = {
   preset: 'ts-jest',
   rootDir: './',
   testRegex: '.(spec|test).(ts|tsx)$',
-  testEnvironment: 'node', // "jsdom" for react
+  testEnvironment: 'jsdom',
   moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths, {
     prefix: '<rootDir>',
   }),
