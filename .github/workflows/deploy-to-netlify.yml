@@ -16,6 +16,8 @@ jobs:
         run: npm pkg delete scripts.prepare
       - name: install packages
         run: yarn install
+      - name: install netlify cli
+        run: yarn add netlify-cli -D
       - name: build
         run: yarn build
       - name: deploy to netlify
