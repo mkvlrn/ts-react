@@ -8,7 +8,7 @@ const config: Config = {
   preset: 'ts-jest',
   rootDir: './',
   testRegex: '.spec.(ts|tsx)$', // "spec" for unit tests, "test" for integration or e2e
-  testEnvironment: 'node', // "jsdom" for react
+  testEnvironment: 'jsdom', // "jsdom" for react
   moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths, {
     prefix: '<rootDir>',
   }),
@@ -16,7 +16,11 @@ const config: Config = {
     '^.+.(png|svg|jpg|gif|webp)$': 'jest-transform-stub',
   },
   coverageDirectory: 'coverage',
-  collectCoverageFrom: ['./src/**/*.{ts,tsx}', '!**/index.{ts,tsx}'],
+  collectCoverageFrom: [
+    './src/**/*.{ts,tsx}',
+    '!**/index.{ts,tsx}',
+    '!**/style.tsx',
+  ],
 };
 
 export default config;
