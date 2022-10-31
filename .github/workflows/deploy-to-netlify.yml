@@ -13,7 +13,7 @@ jobs:
         with:
           node-version: 18
       - name: disable husky
-        run: npm pkg set scripts.prepare=""
+        run: npm pkg delete scripts.prepare
       - name: install packages
         run: yarn install
       - name: build
