@@ -23,6 +23,7 @@
   ],
   "importOrderSeparation": true,
   "importOrderSortSpecifiers": true,
+  "importOrderCaseInsensitive": true,
   "importOrderParserPlugins": [
     "typescript",
     "jsx",

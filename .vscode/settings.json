@@ -1,7 +1,5 @@
 {
-  "[json][jsonc][javascript][javascriptreact][typescript][typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.codeActionsOnSave": {
     "source.fixAll": true
   },
@@ -19,6 +17,5 @@
     "typescript",
     "typescriptreact"
   ],
-  "typescript.preferences.importModuleSpecifier": "non-relative",
-  "liveServer.settings.port": 5501
+  "typescript.preferences.importModuleSpecifier": "non-relative"
 }

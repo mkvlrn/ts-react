@@ -3,15 +3,17 @@
     "module": "CommonJS",
     "target": "ESNext",
     "lib": [
-      "ESNext"
+      "ESNext",
+      "DOM",
+      "DOM.Iterable"
     ],
-    "baseUrl": "./",
+    "rootDir": ".",
+    "baseUrl": ".",
     "paths": {
       "#/*": [
         "src/*"
       ]
     },
-    "rootDir": ".",
     "allowJs": false,
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
