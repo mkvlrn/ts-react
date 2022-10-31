@@ -1,7 +1,7 @@
 {
-  "name": "React PWA Typescript template",
-  "short_name": "TS-PWA",
-  "description": "React PWA Typescript template",
+  "name": "React typescript template",
+  "short_name": "ts-react",
+  "description": "React typescript template",
   "start_url": "/",
   "lang": "en",
   "display": "standalone",

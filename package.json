@@ -1,13 +1,12 @@
 {
-  "name": "ts-pwa",
+  "name": "ts-react",
   "version": "1.0.0",
   "main": "index.js",
   "author": "Mike Valeriano <mkvlrn@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "generate-icons": "npx pwa-asset-generator src/public/logo.svg -i src/index.html -m src/public/manifest.webmanifest -x -s false src/public && npx prettier src/index.html src/public/manifest.webpanifest --write",
-    "build": "npx tsc && npx vite build",
     "prebuild": "npx rimraf build",
+    "build": "npx tsc && npx vite build",
     "dev": "npx vite",
     "start": "node build",
     "test": "jest",
@@ -18,7 +17,6 @@
     "@commitlint/config-conventional": "^17.1.0",
     "@trivago/prettier-plugin-sort-imports": "^3.4.0",
     "@types/jest": "^29.2.0",
-    "@types/node": "^18.11.7",
     "@types/react": "^18.0.24",
     "@types/react-dom": "^18.0.8",
     "@typescript-eslint/eslint-plugin": "^5.41.0",
@@ -39,18 +37,13 @@
     "jest-environment-jsdom": "^29.2.2",
     "jest-transform-stub": "^2.0.0",
     "lint-staged": "^13.0.3",
-    "nodemon": "^2.0.20",
     "prettier": "^2.7.1",
-    "pwa-asset-generator": "^6.2.0",
     "rimraf": "^3.0.2",
     "ts-jest": "^29.0.3",
     "ts-node": "^10.9.1",
-    "tsc-alias": "^1.7.0",
     "tsc-files": "^1.1.3",
-    "tsconfig-paths": "^4.1.0",
     "typescript": "^4.8.4",
-    "vite": "^3.2.1",
-    "vite-plugin-pwa": "^0.13.1"
+    "vite": "^3.2.1"
   },
   "dependencies": {
     "react": "^18.2.0",
