@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import { styled } from './_styled.js';
 
 const StyledTitle = styled.h1`
   text-align: center;

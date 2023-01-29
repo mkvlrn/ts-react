@@ -1,11 +1,9 @@
 {
   "*.(ts|tsx)": [
-    "npx tsc-files src/declarations.d.ts",
-    "npx eslint --fix",
-    "npx prettier --write",
-    "npx jest --bail --findRelatedTests"
+    "yarn tsc-files src/declarations.d.ts",
+    "yarn lint",
+    "yarn format",
+    "yarn test-staged"
   ],
-  "*.json": [
-    "npx prettier --write"
-  ]
+  "*.json": ["yarn format"]
 }

@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import { styled } from './_styled.js';
 
 const StyledButton = styled.a`
   display: block;

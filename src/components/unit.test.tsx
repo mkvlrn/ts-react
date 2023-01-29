@@ -1,10 +1,10 @@
 import '@testing-library/jest-dom';
 import { render, screen } from '@testing-library/react';
 
-import { Github } from '#/components/github';
-import { Logo } from '#/components/logo';
-import { Tagline } from '#/components/tagline';
-import { Title } from '#/components/title';
+import { Github } from './github.js';
+import { Logo } from './logo.js';
+import { Tagline } from './tagline.js';
+import { Title } from './title.js';
 
 describe('all components', () => {
   test('github.tsx', () => {

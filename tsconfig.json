@@ -1,20 +1,11 @@
 {
   "compilerOptions": {
-    "module": "CommonJS",
-    "target": "ESNext",
-    "lib": [
-      "ESNext",
-      "DOM",
-      "DOM.Iterable"
-    ],
     "rootDir": ".",
-    "baseUrl": ".",
-    "paths": {
-      "#/*": [
-        "src/*"
-      ]
-    },
-    "allowJs": false,
+    "outDir": "build",
+    "module": "NodeNext",
+    "target": "ES2020",
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "allowJs": true,
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "emitDecoratorMetadata": true,
@@ -22,21 +13,14 @@
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
     "jsx": "react-jsx",
-    "moduleResolution": "node",
+    "moduleResolution": "NodeNext",
     "noEmit": true,
     "removeComments": true,
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true
   },
-  "include": [
-    "./src",
-    "./test",
-    "*.config.*"
-  ],
   "ts-node": {
-    "require": [
-      "tsconfig-paths/register"
-    ]
+    "esm": true
   }
 }

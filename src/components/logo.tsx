@@ -1,6 +1,5 @@
-import styled from '@emotion/styled';
-
-import logo from '#/assets/react.svg';
+import logo from '../assets/react.svg';
+import { styled } from './_styled.js';
 
 const StyledLogo = styled.img`
   @keyframes logoSpin {

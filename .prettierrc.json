@@ -1,32 +1,13 @@
 {
   "semi": true,
   "singleQuote": true,
-  "printWidth": 80,
+  "printWidth": 100,
   "endOfLine": "lf",
   "trailingComma": "all",
   "jsxSingleQuote": true,
-  "overrides": [
-    {
-      "files": [
-        "*.json",
-        "*.jsonc",
-        ".*rc"
-      ],
-      "options": {
-        "parser": "json-stringify"
-      }
-    }
-  ],
-  "importOrder": [
-    "^#(.*)/",
-    "^[./]"
-  ],
+  "importOrder": ["^#(.*)/", "^[./]"],
   "importOrderSeparation": true,
   "importOrderSortSpecifiers": true,
   "importOrderCaseInsensitive": true,
-  "importOrderParserPlugins": [
-    "typescript",
-    "jsx",
-    "decorators-legacy"
-  ]
+  "importOrderParserPlugins": ["typescript", "jsx", "decorators-legacy"]
 }

@@ -18,9 +18,7 @@
     "plugin:jest/style",
     "prettier"
   ],
-  "plugins": [
-    "jest"
-  ],
+  "plugins": ["jest"],
   "env": {
     "node": true,
     "browser": true,
@@ -34,11 +32,7 @@
       "version": "latest"
     }
   },
-  "ignorePatterns": [
-    "node_modules",
-    "build",
-    "coverage"
-  ],
+  "ignorePatterns": ["node_modules", "build", "coverage"],
   "rules": {
     "jsx-a11y/label-has-associated-control": "off",
     "jsx-a11y/no-noninteractive-element-interactions": "off",
@@ -56,10 +50,7 @@
     "jest/expect-expect": [
       "error",
       {
-        "assertFunctionNames": [
-          "expect",
-          "pactum.**.expect*"
-        ]
+        "assertFunctionNames": ["expect", "pactum.**.expect*"]
       }
     ]
   }

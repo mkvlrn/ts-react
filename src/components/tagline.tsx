@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import { styled } from './_styled.js';
 
 const StyledTagline = styled.h3`
   text-align: center;
@@ -7,8 +7,7 @@ const StyledTagline = styled.h3`
 export function Tagline() {
   return (
     <StyledTagline>
-      An opinionated, code-quality-first, bare bones template for React projects
-      built with Vite.
+      An opinionated, code-quality-first, bare bones template for React projects built with Vite.
     </StyledTagline>
   );
 }
