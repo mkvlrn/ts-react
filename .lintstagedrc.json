@@ -1,6 +1,6 @@
 {
   "*.(ts|tsx)": [
-    "yarn tsc-files src/declarations.d.ts",
+    "yarn check-types src/declarations.d.ts",
     "yarn lint",
     "yarn format",
     "yarn test-staged"
