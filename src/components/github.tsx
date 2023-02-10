@@ -1,4 +1,4 @@
-import { styled } from './_styled.js';
+import { styled } from '#/components/_styled.jsx';
 
 const StyledButton = styled.a`
   display: block;

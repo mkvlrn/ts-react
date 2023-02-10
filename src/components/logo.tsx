@@ -1,5 +1,5 @@
-import logo from '../assets/react.svg';
-import { styled } from './_styled.js';
+import logo from '#/assets/react.svg';
+import { styled } from '#/components/_styled.jsx';
 
 const StyledLogo = styled.img`
   @keyframes logoSpin {

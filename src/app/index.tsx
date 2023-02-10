@@ -1,8 +1,8 @@
-import { Github } from '../components/github.js';
-import { Logo } from '../components/logo.js';
-import { Tagline } from '../components/tagline.js';
-import { Title } from '../components/title.js';
-import { GlobalStyle } from './style.js';
+import { GlobalStyle } from '#/app/style.jsx';
+import { Github } from '#/components/github.jsx';
+import { Logo } from '#/components/logo.jsx';
+import { Tagline } from '#/components/tagline.jsx';
+import { Title } from '#/components/title.jsx';
 
 export function App() {
   return (
