@@ -20,7 +20,7 @@
   "devDependencies": {
     "@commitlint/cli": "^17.4.3",
     "@commitlint/config-conventional": "^17.4.3",
-    "@jest/globals": "^29.4.2",
+    "@jest/globals": "^29.4.3",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@trivago/prettier-plugin-sort-imports": "^4.0.0",
