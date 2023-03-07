@@ -1,5 +1,6 @@
-import '@testing-library/jest-dom';
-import { render, screen } from '@testing-library/react';
+/* eslint-disable vitest/no-hooks */
+import { cleanup, render, screen } from '@testing-library/react';
+import { beforeEach, describe, expect, it } from 'vitest';
 
 import { Github } from '#/components/github.jsx';
 import { Logo } from '#/components/logo.jsx';
@@ -7,7 +8,11 @@ import { Tagline } from '#/components/tagline.jsx';
 import { Title } from '#/components/title.jsx';
 
 describe('all components', () => {
-  test('github.tsx', () => {
+  beforeEach(() => {
+    cleanup();
+  });
+
+  it('github.tsx', () => {
     render(<Github />);
 
     const github = screen.getByRole('link');
@@ -16,7 +21,7 @@ describe('all components', () => {
     expect(github).toHaveTextContent('View on Github');
   });
 
-  test('logo.tsx', () => {
+  it('logo.tsx', () => {
     render(<Logo />);
 
     const logo = screen.getByRole('img');
@@ -24,7 +29,7 @@ describe('all components', () => {
     expect(logo).toBeInTheDocument();
   });
 
-  test('tagline.tsx', () => {
+  it('tagline.tsx', () => {
     render(<Tagline />);
 
     const tagline = screen.getByRole('heading');
@@ -35,7 +40,7 @@ describe('all components', () => {
     );
   });
 
-  test('title.tsx', () => {
+  it('title.tsx', () => {
     render(<Title />);
 
     const title = screen.getByRole('heading');
