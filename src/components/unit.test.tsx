@@ -1,6 +1,5 @@
-/* eslint-disable vitest/no-hooks */
 import { cleanup, render, screen } from '@testing-library/react';
-import { beforeEach, describe, expect, it } from 'vitest';
+import { beforeEach, describe, expect, test } from 'vitest';
 import { Github } from '#/components/github.jsx';
 import { Logo } from '#/components/logo.jsx';
 import { Tagline } from '#/components/tagline.jsx';
@@ -11,7 +10,7 @@ describe('all components', () => {
     cleanup();
   });
 
-  it('github.tsx', () => {
+  test('github.tsx', () => {
     render(<Github />);
 
     const github = screen.getByRole('link');
@@ -20,7 +19,7 @@ describe('all components', () => {
     expect(github).toHaveTextContent('View on Github');
   });
 
-  it('logo.tsx', () => {
+  test('logo.tsx', () => {
     render(<Logo />);
 
     const logo = screen.getByRole('img');
@@ -28,7 +27,7 @@ describe('all components', () => {
     expect(logo).toBeInTheDocument();
   });
 
-  it('tagline.tsx', () => {
+  test('tagline.tsx', () => {
     render(<Tagline />);
 
     const tagline = screen.getByRole('heading');
@@ -39,7 +38,7 @@ describe('all components', () => {
     );
   });
 
-  it('title.tsx', () => {
+  test('title.tsx', () => {
     render(<Title />);
 
     const title = screen.getByRole('heading');
