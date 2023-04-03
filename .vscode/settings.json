@@ -12,7 +12,6 @@
   "editor.wordWrap": "wordWrapColumn",
   "editor.wordWrapColumn": 100,
   "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
-  "javascript.preferences.importModuleSpecifierEnding": "jsx",
-  "typescript.preferences.importModuleSpecifierEnding": "jsx",
+  "typescript.preferences.importModuleSpecifierEnding": "js",
   "typescript.preferences.importModuleSpecifier": "non-relative"
 }

@@ -1,7 +1,6 @@
 /* eslint-disable vitest/no-hooks */
 import { cleanup, render, screen } from '@testing-library/react';
 import { beforeEach, describe, expect, it } from 'vitest';
-
 import { Github } from '#/components/github.jsx';
 import { Logo } from '#/components/logo.jsx';
 import { Tagline } from '#/components/tagline.jsx';

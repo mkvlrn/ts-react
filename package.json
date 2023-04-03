@@ -14,8 +14,9 @@
     "prebuild": "yarn rimraf build",
     "prepare": "yarn husky install",
     "start": "node build",
-    "test-staged": "yarn vitest related --run",
-    "test": "yarn vitest --run"
+    "test": "yarn vitest --run",
+    "test-cov": "rimraf coverage && yarn vitest run --coverage",
+    "test-staged": "yarn vitest related --run"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.5.1",

@@ -22,5 +22,5 @@
     "skipLibCheck": true,
     "strict": true
   },
-  "include": ["src", "vite*.*.ts"]
+  "include": ["src", "vite.config.ts", "vitest.setup.ts"]
 }

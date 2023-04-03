@@ -14,38 +14,26 @@
     "plugin:import/errors",
     "plugin:import/warnings",
     "plugin:import/typescript",
-    "plugin:vitest/all",
+    "plugin:vitest/recommended",
     "prettier"
   ],
-  "plugins": ["vitest"],
+  "ignorePatterns": ["node_modules", "build", "coverage", "dist"],
   "env": {
     "node": true,
     "browser": true
   },
   "settings": {
-    "import/resolver": {
-      "typescript": {}
-    }
+    "import/resolver": { "typescript": {} }
   },
-  "ignorePatterns": ["node_modules", "build", "coverage"],
   "rules": {
+    "@typescript-eslint/no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
+    "class-methods-use-this": "off",
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
+    "import/prefer-default-export": "off",
     "jsx-a11y/label-has-associated-control": "off",
     "jsx-a11y/no-noninteractive-element-interactions": "off",
     "react/jsx-props-no-spreading": "off",
-    "no-underscore-dangle": "off",
     "no-nested-ternary": "off",
-    "import/prefer-default-export": "off",
-
-    "import/no-extraneous-dependencies": [
-      "error",
-      { "devDependencies": true, "optionalDependencies": true, "peerDependencies": true }
-    ],
-    "class-methods-use-this": "off",
-    "@typescript-eslint/no-unused-vars": [
-      "error",
-      {
-        "argsIgnorePattern": "^_"
-      }
-    ]
+    "no-underscore-dangle": "off"
   }
 }
