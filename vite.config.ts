@@ -20,7 +20,13 @@ export default defineConfig({
   test: {
     root: '.',
     alias: { '#': resolve(__dirname, './src') },
-    coverage: { reportsDirectory: 'coverage', reporter: ['lcov', 'html', 'text'] },
+    coverage: {
+      reportsDirectory: 'coverage',
+      reporter: ['lcov', 'html', 'text'],
+      all: true,
+      include: ['src/**/*'],
+      exclude: ['src/index.tsx', '**/*.test.tsx', '**/*.d.ts'],
+    },
     environment: 'jsdom',
     passWithNoTests: true,
     setupFiles: ['vitest.setup.ts'],
