@@ -1,9 +1,25 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [],
+  content: ['./src/**/*.{html,tsx}'],
   theme: {
-    extend: {},
+    extend: {
+      keyframes: {
+        logoSpin: {
+          from: {
+            transform: 'rotate(0deg)',
+          },
+          to: {
+            transform: 'rotate(-360deg)',
+          },
+        },
+      },
+      animation: {
+        logoSpin: 'logoSpin 20s linear infinite',
+      },
+    },
+    plugins: [],
+    fontFamily: {
+      sans: ['Signika', 'sans-serif'],
+    },
   },
-  plugins: [],
-}
-
+};

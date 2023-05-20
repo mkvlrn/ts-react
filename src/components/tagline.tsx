@@ -1,13 +1,7 @@
-import { styled } from '#/components/_styled.jsx';
-
-const StyledTagline = styled.h3`
-  text-align: center;
-`;
-
 export function Tagline() {
   return (
-    <StyledTagline>
+    <h3 className='text-center text-xl mb-4'>
       An opinionated, code-quality-first, bare bones template for React projects built with Vite.
-    </StyledTagline>
+    </h3>
   );
 }
