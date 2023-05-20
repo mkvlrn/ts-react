@@ -22,5 +22,5 @@
     "skipLibCheck": true,
     "strict": true
   },
-  "include": ["src", "vite.config.ts", "vitest.setup.ts"]
+  "include": ["src", "vite.config.ts", "vitest.setup.ts", "postcss.config.js", "tailwind.config.js"]
 }
