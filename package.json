@@ -5,6 +5,9 @@
   "author": "Mike Valeriano <mkvlrn@gmail.com>",
   "license": "MIT",
   "type": "module",
+  "engines": {
+    "node": "18"
+  },
   "scripts": {
     "build": "yarn tsc && npx vite build",
     "check-types": "yarn tsc-files",
