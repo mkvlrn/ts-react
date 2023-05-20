@@ -1,13 +1,10 @@
-import matchers, { TestingLibraryMatchers } from '@testing-library/jest-dom/matchers.js';
-import { expect } from 'vitest';
+import matchers from '@testing-library/jest-dom/matchers.js';
+import { cleanup } from '@testing-library/react';
+import { afterEach, expect } from 'vitest';
 
-declare global {
-  namespace Vi {
-    interface JestAssertion<T = any>
-      extends jest.Matchers<void, T>,
-        TestingLibraryMatchers<T, void> {}
-  }
-}
-
-// @ts-expect-error, mjs import without proper doc, maybe?
+// @ts-expect-error, default import or w/e
 expect.extend(matchers);
+
+afterEach(() => {
+  cleanup();
+});
