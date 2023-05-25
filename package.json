@@ -24,13 +24,15 @@
   "devDependencies": {
     "@commitlint/cli": "^17.6.3",
     "@commitlint/config-conventional": "^17.6.3",
+    "@mkvlrn/eslint-config": "^20.0.0",
+    "@mkvlrn/prettier-config": "^20.0.1",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^14.0.0",
     "@trivago/prettier-plugin-sort-imports": "^4.1.1",
-    "@types/react": "^18.2.6",
+    "@types/react": "^18.2.7",
     "@types/react-dom": "^18.2.4",
-    "@typescript-eslint/eslint-plugin": "^5.59.6",
-    "@typescript-eslint/parser": "^5.59.6",
+    "@typescript-eslint/eslint-plugin": "^5.59.7",
+    "@typescript-eslint/parser": "^5.59.7",
     "@vitejs/plugin-react": "^4.0.0",
     "@vitest/coverage-c8": "^0.31.1",
     "autoprefixer": "^10.4.14",
@@ -38,20 +40,18 @@
     "eslint": "^8.41.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-typescript": "^17.0.0",
-    "eslint-config-mkvlrn": "mkvlrn/eslint-config-mkvlrn#v1.0.1",
     "eslint-config-prettier": "^8.8.0",
     "eslint-import-resolver-typescript": "^3.5.5",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-jsx-a11y": "^6.7.1",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-vitest": "^0.2.2",
+    "eslint-plugin-vitest": "^0.2.3",
     "husky": "^8.0.3",
     "jsdom": "^22.0.0",
     "lint-staged": "^13.2.2",
     "postcss": "^8.4.23",
     "prettier": "^2.8.8",
-    "prettier-config-mkvlrn": "mkvlrn/prettier-config-mkvlrn#v1.0.1",
     "rimraf": "^5.0.1",
     "tailwindcss": "^3.3.2",
     "ts-node": "^10.9.1",
@@ -70,10 +70,10 @@
       "project": "./tsconfig.json"
     },
     "extends": [
-      "mkvlrn"
+      "@mkvlrn"
     ]
   },
-  "prettier": "prettier-config-mkvlrn",
+  "prettier": "@mkvlrn/prettier-config",
   "lint-staged": {
     "*.(ts|tsx)": [
       "yarn check-types src/types/modules.d.ts",
