@@ -799,10 +799,10 @@
   resolved "https://registry.yarnpkg.com/@mkvlrn/prettier-config/-/prettier-config-20.0.1.tgz#ef5fa9478d96666974301c0dd4031180df8798d0"
   integrity sha512-46o+TeUJ3oAdt1IBtIXC4qH/Nj+ycpXVLnAXSYeZTf3jkL9V07o3uBHOtwhAiaMFQcLVqJqdclGqyyPa/CfLkQ==
 
-"@mkvlrn/tsconfig@^1.0.6":
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/@mkvlrn/tsconfig/-/tsconfig-1.0.6.tgz#a31a51713d3373ee814c6bcd1e34ea602edb3109"
-  integrity sha512-hx7XRB5xSdnuSTV9PdTkVVCnlzQOuQyfYHsJkGdJIV4BeWe9AZEdzRI/Mj5YnfNDZoCv7szR9xu3twFNhe+DhA==
+"@mkvlrn/tsconfig@^1.0.7":
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/@mkvlrn/tsconfig/-/tsconfig-1.0.7.tgz#efb90c33e1304e173a819e131fec1406f785d20c"
+  integrity sha512-KNr0lGikoHQf4OQ5A1PlxlV/aJdE/qBedegwN5WufTsCVaS3GpVOatKar/QghYBINyHZvBcJhq/9yS45u05i+g==
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
