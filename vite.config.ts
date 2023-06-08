@@ -27,6 +27,9 @@ export default defineConfig({
       include: ['src/**/*'],
       exclude: ['src/index.tsx', '**/*.test.tsx', '**/*.d.ts'],
     },
+    env: {
+      NODE_ENV: 'test',
+    },
     environment: 'jsdom',
     passWithNoTests: true,
     setupFiles: ['vitest.setup.ts'],
