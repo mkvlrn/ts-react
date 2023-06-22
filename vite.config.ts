@@ -1,5 +1,5 @@
 import react from '@vitejs/plugin-react';
-import { resolve } from 'path';
+import { resolve } from 'node:path';
 import { defineConfig } from 'vitest/config';
 
 export default defineConfig({
@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [react()],
   root: './src',
   resolve: {
-    alias: { '#': resolve(__dirname, './src') },
+    alias: { '#': resolve('.', './src') },
   },
   build: {
     outDir: '../build',
@@ -19,7 +19,7 @@ export default defineConfig({
   },
   test: {
     root: '.',
-    alias: { '#': resolve(__dirname, './src') },
+    alias: { '#': resolve('.', './src') },
     coverage: {
       reportsDirectory: 'coverage',
       reporter: ['lcov', 'html', 'text'],
