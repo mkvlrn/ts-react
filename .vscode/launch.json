@@ -5,7 +5,7 @@
       "name": "debug dev",
       "request": "launch",
       "runtimeArgs": ["dev"],
-      "runtimeExecutable": "yarn",
+      "runtimeExecutable": "pnpm",
       "skipFiles": ["<node_internals>/**"],
       "type": "node"
     }
