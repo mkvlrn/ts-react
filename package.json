@@ -4,6 +4,9 @@
   "main": "index.js",
   "author": "Mike Valeriano <mkvlrn@gmail.com>",
   "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
     "build": "yarn tsc && npx vite build",
     "check-types": "yarn tsc-files",
