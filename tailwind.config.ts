@@ -1,5 +1,6 @@
-/** @type {import('tailwindcss').Config} */
-export default {
+import type { Config } from 'tailwindcss';
+
+const config: Config = {
   content: ['./src/**/*.{html,tsx}'],
   theme: {
     extend: {
@@ -23,3 +24,6 @@ export default {
     },
   },
 };
+
+// biome-ignore lint/nursery/noDefaultExport: tailwind.config.ts is a config file
+export default config;

@@ -1,16 +1,30 @@
 {
-  "extends": "@mkvlrn/tsconfig",
   "compilerOptions": {
-    "rootDir": ".",
-    "outDir": "build",
+    "module": "NodeNext",
+    "moduleDetection": "force",
+    "moduleResolution": "NodeNext",
+    "target": "ESNext",
+    "outDir": "./build",
+    "lib": ["ESNext", "DOM", "DOM.Iterable", "ESNext.Decorators"],
     "baseUrl": ".",
-    "paths": { "#/*": ["src/*"] }
+    "paths": {
+      "#/*": ["./src/*"]
+    },
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "emitDecoratorMetadata": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "noEmit": true,
+    "preserveSymlinks": true,
+    "removeComments": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "verbatimModuleSyntax": true
   },
-  "include": [
-    "src",
-    "vite.config.mts",
-    "vitest.setup.ts",
-    "postcss.config.mjs",
-    "tailwind.config.js"
-  ]
+  "include": ["./src", "./vitest.setup.ts"]
 }
