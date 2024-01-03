@@ -1,11 +1,21 @@
 import { resolve } from 'node:path';
+import generouted from '@generouted/react-router/plugin';
 import react from '@vitejs/plugin-react';
 import { defineConfig as baseDefineConfig } from 'vite';
 import { defineConfig as testDefineConfig, mergeConfig } from 'vitest/dist/config.js';
 
 const baseConfig = baseDefineConfig({
-  plugins: [react()],
   root: './src',
+  plugins: [
+    react(),
+    generouted({
+      source: {
+        routes: './src/pages/**/*.tsx',
+        modals: './src/pages/**/[+]*.tsx',
+      },
+      output: './src/routes.ts',
+    }),
+  ],
   resolve: {
     alias: { '#': resolve('.', './src') },
   },
