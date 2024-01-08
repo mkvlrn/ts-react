@@ -10,7 +10,7 @@ const baseConfig = baseDefineConfig({
     alias: { '#': resolve('.', './src') },
   },
   build: {
-    outDir: '../build',
+    outDir: './build',
     emptyOutDir: true,
     assetsInlineLimit: 0,
   },
