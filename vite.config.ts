@@ -5,17 +5,7 @@ import { defineConfig as baseDefineConfig } from 'vite';
 import { defineConfig as testDefineConfig, mergeConfig } from 'vitest/dist/config.js';
 
 const baseConfig = baseDefineConfig({
-  root: './src',
-  plugins: [
-    react(),
-    generouted({
-      source: {
-        routes: './src/pages/**/*.tsx',
-        modals: './src/pages/**/[+]*.tsx',
-      },
-      output: './src/routes.ts',
-    }),
-  ],
+  plugins: [react(), generouted()],
   resolve: {
     alias: { '#': resolve('.', './src') },
   },

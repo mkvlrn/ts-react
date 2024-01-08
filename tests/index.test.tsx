@@ -1,9 +1,9 @@
 import { render, screen } from '@testing-library/react';
 import { expect, test } from 'vitest';
-import { App } from '#/app/main.jsx';
+import Home from '#/pages/index.jsx';
 
 test('it works', () => {
-  render(<App />);
+  render(<Home />);
 
   const app = screen.getByRole('main');
 
