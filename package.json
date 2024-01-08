@@ -16,7 +16,7 @@
     "prepare": "yarn husky install",
     "start": "node build",
     "test": "yarn vitest --run",
-    "test-cov": "rimraf coverage && yarn vitest run --coverage",
+    "test-cov": "rm -rf coverage && yarn vitest run --coverage",
     "test-staged": "yarn vitest related --run"
   },
   "devDependencies": {
